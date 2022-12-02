@@ -18,14 +18,14 @@ public class StartActivity extends AppCompatActivity {
 
             @Override
             public void run() {
-                //1:休眠3S
+                //1:休眠6S
                 try {
                     Thread.sleep(6000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
 
-                //2:开启新的activity页面
+                //进入主页面
                 Intent it=new Intent(StartActivity.this,
                         MainActivity.class);
                 startActivity(it);
